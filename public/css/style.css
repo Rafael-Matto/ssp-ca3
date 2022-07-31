@@ -947,7 +947,7 @@ p {
 }
 
 .bg-overlay {
-  background-color: rgba(40, 44, 50, 0.7);
+  background-color: rgba(40, 44, 50, 0.5);
   position: absolute;
   top: 0;
   right: 0;
