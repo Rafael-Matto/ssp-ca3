@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobs Portal - Job Details</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="/css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="/css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        
+        <!-- Menu Start -->
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="/" class="logo">
+                    <img src="/images/logo-light.png" alt="" class="logo-light" height="18" />
+                    <img src="/images/logo-dark.png" alt="" class="logo-dark" height="18" />
+                </a>
+            </div>                 
+            <div class="buy-button">
+                <a href="/postJob" class="btn btn-primary"
+            ><i class="mdi mdi-cloud-upload"></i> Post a Job</a
+          >
+            </div><!--end login button-->
+        </div><!--end container-->
+        <!--end end-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <!-- Start home -->
+    <section class="bg-half page-next-level"> 
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center text-white">
+                        <h4 class="text-uppercase title mb-4">Job Detail</h4>
+                        <ul class="page-next d-inline-block mb-0">
+                            <li><a href="index.html" class="text-uppercase font-weight-bold">Home</a></li>
+                            <li><a href="#" class="text-uppercase font-weight-bold">Jobs</a></li> 
+                            <li>
+                                <span class="text-uppercase text-white font-weight-bold">Job Detail</span> 
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- JOB DETAILS START -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <div class="job-detail border rounded p-4">
+                        <div class="job-detail-content">
+                            <img src="/images/hire.jpg" alt="" height="75" width="75" class="float-left ">
+                            <div class="job-detail-com-desc overflow-hidden d-block">
+                                <h4 class="mt-3"><a href="#" class="text-dark"><%= job.jobTitle %></a></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5 class="text-dark mt-4">Job Description :</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-detail border rounded mt-2 p-4">
+                                <div class="job-detail-desc">
+                                    <p class="text-muted mb-3"><%= job.description%></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-4 col-md-5 mt-4 mt-sm-0">
+                    <div class="job-detail border rounded p-4">
+                        <h5 class="text-muted text-center pb-2"><i class="mdi mdi-map-marker mr-2"></i><%= job.location%></h5>
+
+                        <div class="job-detail-location pt-4 border-top">
+                            <div class="job-details-desc-item">
+                                <div class="float-left mr-2">
+                                    <i class="mdi mdi-bank text-muted"></i>
+                                </div>
+                                <p class="text-muted mb-2">: <%= job.companyName%></p>
+                            </div>
+
+                            <div class="job-details-desc-item">
+                                <div class="float-left mr-2">
+                                    <i class="mdi mdi-email text-muted"></i>
+                                </div>
+                                <p class="text-muted mb-2">: <%= job.email%></p>
+                            </div>
+
+                            <div class="job-details-desc-item">
+                                <div class="float-left mr-2">
+                                    <i class="mdi mdi-currency-usd text-muted"></i>
+                                </div>
+                                <p class="text-muted mb-2">: $<%= job.salary%> /month</p>
+                            </div>
+
+                            <div class="job-details-desc-item">
+                                <div class="float-left mr-2">
+                                    <i class="mdi mdi-security text-muted"></i>
+                                </div>
+                                <p class="text-muted mb-2">: 0 To <%= job.experience%> Years.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="job-detail border rounded mt-4">
+                        <a id="applybtn" class="btn btn-primary btn-block">Apply For Job</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB DETAILS END -->
+
+    
+    <hr>
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="">
+                        <p class="mb-0">© 2022 Jobs Portal.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="/js/selectize.min.js"></script>
+
+    <script src="/js/jquery.nice-select.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script>
+        $("#applybtn").click(function(){
+        $("#applybtn").removeClass("btn-primary")
+        $("#applybtn").addClass("btn-success")
+        $("#applybtn").text("Applied")
+
+        })
+    </script>
+
+</body>
+</html>

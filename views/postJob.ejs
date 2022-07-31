@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jobya - Responsive Job Board HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+
+    <!--Material Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/materialdesignicons.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="/css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="preloader">
+      <div id="status">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+      <!-- Menu Start -->
+      <div class="container">
+        <!-- Logo container-->
+        <div>
+          <a href="/" class="logo">
+            <img
+              src="/images/logo-light.png"
+              alt=""
+              class="logo-light"
+              height="18"
+            />
+            <img
+              src="/images/logo-dark.png"
+              alt=""
+              class="logo-dark"
+              height="18"
+            />
+          </a>
+        </div>
+        <div class="buy-button">
+          <a href="/postJob" class="btn btn-primary"
+            ><i class="mdi mdi-cloud-upload"></i> Post a Job</a
+          >
+        </div>
+        <!--end login button-->
+        <!-- End Logo container-->
+        <div class="menu-extras">
+          <div class="menu-item">
+            <!-- Mobile menu toggle-->
+            <!-- End mobile menu toggle-->
+          </div>
+        </div>
+      </div>
+      <!--end container-->
+      <!--end end-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Start home -->
+    <section class="bg-half page-next-level">
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="text-center text-white">
+              <h4 class="text-uppercase title mb-4">Create A new Job</h4>
+              <ul class="page-next d-inline-block mb-0">
+                <li>
+                  <a href="index.html" class="text-uppercase font-weight-bold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <span class="text-uppercase text-white font-weight-bold"
+                    >Post A Job</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+
+    <!-- POST A JOB START -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="rounded shadow bg-white p-4">
+              <div class="custom-form">
+                <div id="message3"></div>
+                <form
+                  method="post"
+                  action="/createpost"
+                  name="contact-form"
+                  id="contact-form3"
+                >
+                  <h4 class="text-dark mb-3">Post a New Job :</h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Job Title</label>
+                        <input
+                          id="jobTitle"
+                          name="jobTitle"
+                          type="text"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Job Type</label>
+                        <input
+                          id="jobType"
+                          name="jobType"
+                          type="text"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Location</label>
+                        <input
+                          id="loc"
+                          name="location"
+                          type="text"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Salary</label>
+                        <input
+                          id="salary"
+                          name="salary"
+                          type="number"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Years Of Experience</label>
+                        <input
+                          id="years"
+                          type="number"
+                          name="years"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Company Name</label>
+                        <input
+                          id="cName"
+                          type="text"
+                          name="cName"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Email</label>
+                        <input
+                          id="email"
+                          type="email"
+                          name="email"
+                          class="form-control resume"
+                          placeholder=""
+                        />
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group app-label mt-2">
+                        <label class="text-muted">Job Description</label>
+                        <textarea
+                          id="description"
+                          rows="6"
+                          name="jobD"
+                          class="form-control resume"
+                          placeholder=""
+                        ></textarea>
+                        <small>Error Message</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mt-2">
+                      <input type="submit" class="btn btn-primary" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- POST A JOB END -->
+
+    <!-- footer end -->
+    <hr />
+    <footer class="footer footer-bar">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="">
+              <p class="mb-0">© 2022 Jobs Portal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+      <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="/js/selectize.min.js"></script>
+
+    <script src="/js/jquery.nice-select.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/formValidation.js"></script>
+  </body>
+</html>
